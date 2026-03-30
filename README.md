@@ -1,79 +1,62 @@
 # Jason La Mard Jones — Portfolio Site
 
-Professional portfolio site for Jason La Mard Jones, Community Development Advisor and U.S. Navy Veteran.
+Professional portfolio for Jason La Mard Jones, Community Development Advisor and U.S. Navy Veteran.
 
-## Files
+---
+
+## Files in This Package
 
 | File | Description |
 |------|-------------|
-| `index.html` | Home page with hero section and interactive career timeline |
-| `experience.html` | Full career experience, education, and certifications |
-| `community.html` | Community development work — Cabo Verde and past initiatives |
-| `portfolio.html` | Media, presentations, research, and event photos |
+| `index.html` | Home — hero, approach, current focus, timeline |
+| `experience.html` | Full career, education, certifications |
+| `community.html` | Cabo Verde work and past outreach |
+| `portfolio.html` | Projects, media, video, documentation |
 | `contact.html` | Contact details and availability |
-| `style.css` | Shared stylesheet (all pages) |
-| `main.js` | Shared JavaScript — navigation, animations, timeline |
+| `style.css` | Shared stylesheet |
+| `main.js` | Navigation, animations, timeline |
+| `assets/jason-headshot.png` | **Replace with your actual headshot** |
+| `assets/mindelo-banner.png` | **Replace with a real Cabo Verde photo** |
 
-## How to Deploy on GitHub Pages
+---
 
-1. Create a free GitHub account at github.com if you don't have one
-2. Create a new repository — name it exactly: `yourusername.github.io`
-   (e.g. if your GitHub username is jasonlamardjones, name it `jasonlamardjones.github.io`)
-3. Upload all files in this folder to that repository
-4. Go to repository Settings → Pages → Source: Deploy from branch → Branch: main → Save
-5. Your site will be live at: `https://yourusername.github.io`
+## How to Publish on GitHub Pages
 
-## Customization Checklist
+### Step 1 — Create a GitHub account
+Go to github.com and sign up if you don't have one.
 
-Before going live, update these items:
+### Step 2 — Create a repository
+- Click + (top right) → New repository
+- Name it EXACTLY: yourusername.github.io
+- Set to Public
+- Do NOT check "Add a README file"
+- Click Create repository
 
-### index.html
-- [ ] Replace the photo placeholder with your actual headshot
-  - Add: `<img src="your-photo.jpg" alt="Jason La Mard Jones" style="width:100%; height:100%; object-fit:cover;">`
-  - Inside the `.photo-frame` div
+### Step 3 — Upload files
+CRITICAL: Upload the individual files directly — NOT the zip, NOT a folder named "site".
 
-### experience.html
-- [ ] Replace `href="#"` on the Download CV button with your Google Drive CV link
+On the empty repo page, click "uploading an existing file" and upload all files:
+index.html, experience.html, community.html, portfolio.html, contact.html, style.css, main.js
 
-### portfolio.html
-- [ ] Replace `VIDEO_ID_HERE` in the YouTube embed with your actual video ID
-  - From: youtube.com/watch?v=**dQw4w9WgXcQ** ← this part is the ID
-- [ ] Replace `href="#"` on document links with actual Google Drive links
-- [ ] Replace photo placeholder divs with actual `<img>` tags
+For assets: upload files named assets/jason-headshot.png and assets/mindelo-banner.png
 
-### contact.html
-- [ ] Replace `href="#"` on the Download CV button with your Google Drive CV link
+Click Commit changes.
 
-### All pages
-- [ ] Verify all LinkedIn URLs are correct
-- [ ] Test on mobile before sharing
+### Step 4 — Enable GitHub Pages
+- Go to repository Settings → Pages (left sidebar)
+- Source: Deploy from a branch
+- Branch: main / (root)
+- Click Save
 
-## Adding Photos
+### Step 5 — Visit your site
+Wait 2-3 minutes. Site goes live at: https://yourusername.github.io
 
-For each photo placeholder like:
-```html
-<div style="aspect-ratio: 4/3; background: var(--warm); ...">
-  <span>APU Resource Fair photo</span>
-</div>
-```
+---
 
-Replace with:
-```html
-<img src="your-photo.jpg" alt="APU Military and Veteran Resource Fair 2013"
-     style="width:100%; height:100%; object-fit:cover; border-radius:6px; border:1px solid #E2DDD4;">
-```
+## Before Going Live
 
-Upload photos to the same GitHub repository folder, then reference by filename.
-
-## Color Reference (for any future edits)
-
-| Variable | Value | Use |
-|----------|-------|-----|
-| `--navy` | `#1C3461` | Primary navy blue |
-| `--gold` | `#B5922A` | Antique gold accent |
-| `--cream` | `#FAFAF7` | Page background |
-| `--warm` | `#F3F1EC` | Section backgrounds |
-
-## Live URL
-
-Once deployed: `https://yourusername.github.io`
+- [ ] Replace assets/jason-headshot.png with your real headshot
+- [ ] Replace assets/mindelo-banner.png with a real Cabo Verde photo  
+- [ ] Replace VIDEO_ID_HERE in portfolio.html with your YouTube video ID
+- [ ] Replace href="#" CV buttons in experience.html and contact.html with Google Drive link
+- [ ] Test on mobile
